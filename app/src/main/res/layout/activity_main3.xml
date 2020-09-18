@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity3"
+    android:background="@color/dbg">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Covid-19 Statistics"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"
+        android:id="@+id/head"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/dtc"
+        android:textFontWeight="900"
+        android:layout_margin="30dp"/>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/head"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/cs"
+        android:layout_margin="20dp"
+        android:orientation="horizontal"
+        android:background="@drawable/sw"
+        android:padding="5dp">
+
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="INDIA"
+            android:id="@+id/ind"
+            android:button="@null"
+            android:textColor="@color/dbtntc"
+            android:textSize="18dp"
+            android:background="@drawable/sbtn"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="STATE"
+            android:id="@+id/con"
+            android:button="@null"
+            android:textSize="18dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/sbtn"
+            android:checked="true"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="5dp"
+            android:textColor="@color/dbtntc"
+            android:paddingBottom="5dp"/>
+    </RadioGroup>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cs"
+        android:padding="10sp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/ll">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="STATE"
+            android:textColor="@color/dbtntc"
+            android:id="@+id/ps1"
+            android:layout_marginLeft="10dp"
+            android:minWidth="130sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CONFIRM"
+            android:textColor="@color/dbtntc"
+            android:id="@+id/ps2"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RECOVER"
+            android:textColor="@color/dbtntc"
+            android:id="@+id/ps3"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DECEAS"
+            android:textColor="@color/dbtntc"
+            android:id="@+id/ps4"
+            android:layout_marginLeft="10dp"/>
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll"
+        android:id="@+id/pl"
+        android:layout_marginBottom="30dp"/>
+
+
+</RelativeLayout>

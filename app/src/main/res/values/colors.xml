@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="b1">#182829</color>
+    <color name="tc">#FFFFFF</color>
+    <color name="b2">#230F41</color>
+    <color name="b3">#331427</color>
+    <color name="bg">#473F97</color>
+    <color name="dbg">#161625</color>
+    <color name="dtc">#B1B1B2</color>
+    <color name="dbtnbg">#332B21</color>
+    <color name="dbtntc">#A55A1A</color>
+
+
+</resources>

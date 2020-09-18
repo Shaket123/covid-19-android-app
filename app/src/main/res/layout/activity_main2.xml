@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/dbg">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Covid-19 Statistics"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"
+        android:id="@+id/head"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/dtc"
+        android:textFontWeight="900"
+        android:layout_margin="30dp"/>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/head"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/cs"
+        android:layout_margin="20dp"
+        android:orientation="horizontal"
+        android:background="@drawable/sw"
+        android:padding="5dp">
+
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="INDIA"
+            android:id="@+id/ind"
+            android:button="@null"
+            android:textColor="@color/dbtntc"
+            android:textSize="18dp"
+            android:background="@drawable/sbtn"
+            android:checked="true"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="STATE"
+            android:id="@+id/con"
+            android:button="@null"
+            android:textSize="18dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/sbtn"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="5dp"
+            android:textColor="@color/dbtntc"
+            android:paddingBottom="5dp"/>
+
+
+    </RadioGroup>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cs"
+        android:id="@+id/abb"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp">
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/r1"
+            android:padding="15dp"
+            android:id="@+id/a1"
+            android:layout_toLeftOf="@+id/a2"
+            android:layout_marginRight="8dp"
+            android:minWidth="120dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Confirmed"
+                android:id="@+id/label"
+                android:textSize="16dp"
+                android:textColor="#259F41"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/label"
+                android:textSize="23dp"
+                android:paddingTop="20dp"
+                android:textColor="#259F41"
+                android:id="@+id/p1"/>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/r3"
+            android:padding="15dp"
+            android:id="@+id/a2"
+            android:layout_centerHorizontal="true"
+            android:minWidth="120dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Deceased"
+                android:id="@+id/labe3"
+                android:textSize="16dp"
+                android:textColor="#FF073A"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/labe3"
+                android:textSize="23dp"
+                android:paddingTop="20dp"
+                android:textColor="#FF073A"
+                android:textFontWeight="400"
+                android:id="@+id/p3"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/r2"
+            android:padding="15dp"
+            android:id="@+id/a3"
+            android:layout_toRightOf="@+id/a2"
+            android:layout_marginLeft="8dp"
+            android:minWidth="120dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Recovered"
+                android:id="@+id/labe2"
+                android:textSize="16dp"
+                android:textColor="#6663B9"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/labe2"
+                android:textSize="23dp"
+                android:paddingTop="20dp"
+                android:textColor="#6663B9"
+                android:textFontWeight="400"
+                android:id="@+id/p2"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/abb"
+        android:id="@+id/cs1"
+        android:orientation="horizontal"
+        android:background="@drawable/sw"
+        android:padding="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CONFIRM"
+            android:id="@+id/k1"
+            android:button="@null"
+            android:textSize="18dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textColor="@color/dbtntc"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:background="@drawable/sbtn"
+            android:checked="true" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DECEAS"
+            android:id="@+id/k2"
+            android:button="@null"
+            android:textSize="18dp"
+            android:paddingTop="5dp"
+            android:textColor="@color/dbtntc"
+            android:paddingBottom="5dp"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:background="@drawable/sbtn"
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="13dp"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RECOVER"
+            android:id="@+id/k3"
+            android:button="@null"
+            android:textColor="@color/dbtntc"
+            android:textSize="18dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:background="@drawable/sbtn"/>
+
+    </RadioGroup>
+
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/chart"
+        android:layout_below="@+id/cs1"
+        android:layout_margin="10dp"/>
+
+
+</RelativeLayout>
